@@ -1,11 +1,17 @@
 
-const factorial = function(n) {
+const f= function(n) {
   if(n <= 0){
     return 1;
   }
 
-  return (n * factorial(n-1));
   
+return (n * f(n-1));
+
+  
+  }
+
+const factorial = function(n){ 
+   console.log(f(n));
 }
 
-console.log(factorial(5));
+factorial(5);
